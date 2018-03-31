@@ -1,0 +1,9 @@
+<?php
+
+
+Route::redirect('/', '/dashboard', 301);
+
+
+Route::get('/dashboard', 'DashboardController@index')
+    ->name('admin.dashboard');
+
